@@ -1,6 +1,6 @@
 # 📖 Introducción
 
-## 🎯 Programación Orientada a Objetos (POO)
+##  Programación Orientada a Objetos (POO)
 
 La **Programación Orientada a Objetos (POO)** es un paradigma de programación que se basa en la creación y manipulación de "objetos", los cuales representan entidades del mundo real. Es fundamental porque permite:
 - Modularidad: División del código en partes reutilizables.
@@ -9,7 +9,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## 🔑 Los Cuatro Fundamentos de POO
+##  Los Cuatro Fundamentos de POO
 
 ### 1️⃣ **Encapsulamiento**
    - Agrupar datos y métodos en una sola unidad (clase).
@@ -41,7 +41,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ## 📌 Casos de Uso
 
-### ✅ **Caso de Uso 1: Registro de Usuario**
+###  **Caso de Uso 1: Registro de Usuario**
 - **Actor:** Usuario  
 - **Descripción:** Permite a los usuarios registrarse en el sistema.  
 - **Flujo Principal:**  
@@ -51,7 +51,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 - **Precondiciones:** Ninguna.  
 - **Postcondiciones:** El usuario queda registrado en el sistema.  
 
-### ✅ **Caso de Uso 2: Solicitar Turno**
+###  **Caso de Uso 2: Solicitar Turno**
 - **Actor:** Usuario  
 - **Descripción:** Permite a los usuarios solicitar un turno.  
 - **Flujo Principal:**  
@@ -61,7 +61,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 - **Precondiciones:** El usuario debe estar registrado.  
 - **Postcondiciones:** Se genera y asigna un turno.  
 
-### ✅ **Caso de Uso 3: Consultar Estado del Turno**
+###  **Caso de Uso 3: Consultar Estado del Turno**
 - **Actor:** Usuario  
 - **Descripción:** Permite a los usuarios ver el estado de su turno en tiempo real.  
 - **Flujo Principal:**  
@@ -70,7 +70,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 - **Precondiciones:** El usuario debe tener un turno generado.  
 - **Postcondiciones:** Se muestra la información del turno.  
 
-### ✅ **Caso de Uso 4: Cancelar Turno**
+###  **Caso de Uso 4: Cancelar Turno**
 - **Actor:** Usuario  
 - **Descripción:** Permite a los usuarios cancelar un turno asignado.  
 - **Flujo Principal:**  
@@ -80,7 +80,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 - **Precondiciones:** El usuario debe tener un turno activo.  
 - **Postcondiciones:** El turno se elimina del sistema.  
 
-### ✅ **Caso de Uso 5: Generar Reportes de Turnos**
+###  **Caso de Uso 5: Generar Reportes de Turnos**
 - **Actor:** Administrador  
 - **Descripción:** Permite al administrador generar reportes sobre turnos atendidos.  
 - **Flujo Principal:**  
