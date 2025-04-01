@@ -89,3 +89,4 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 - **Precondiciones:** El administrador debe tener permisos.  
 - **Postcondiciones:** Se genera un reporte de turnos.
   # Boceto de Turnos
+  Para ver el boceto sobre la gestion de turnos haga click [Aqui](boceto.md)
