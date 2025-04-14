@@ -1,6 +1,6 @@
-# Escenario de caso de uso 1
+# Escenario de caso de uso 2
 
-# Registrar usuario
+# Solicitar Turno
 
 ## Descripción General
 Este caso permite al usuario poder solicitar un turno medico en el momento que desee, siempre y cuando haya un turno disponible
