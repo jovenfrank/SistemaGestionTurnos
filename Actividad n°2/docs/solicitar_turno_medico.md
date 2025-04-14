@@ -3,20 +3,21 @@
 # Registrar usuario
 
 ## Descripción General
-Este caso de uso permite al usuario poder registrarse en el sistema para poder sacar turnos medicos, cancelarlos, etc
+Este caso permite al usuario poder solicitar un turno medico en el momento que desee, siempre y cuando haya un turno disponible
 
 ## Flujo de eventos
-* El usuario ingresa al sistema para registrarse.
-* El sistema muestra un formulario en el cual pide datos del paciente (Nombre y apellido completo, DNI, número telefónico, Correo electrónico.
-* El usuario ingresa todos los datos necesarios.
-* El sistema valida los datos ingresados ​​(Para validar el correo y numero telefonico envia un codigo).
-* Los datos son registrados y guardados en el sistema.
-* El sistema muestra un mensaje de "Registrado con exito"
+* El usuario ingresa con su cuenta previamente creada.
+* El sistema verifica si los datos son correctos.
+* El usuario selecciona el apartado de solicitar un turno.
+* El sistema muestra los turnos disponibles según una fecha, horario, especialidad y un médico.
+* El usuario selecciona la especialidad, fecha, horario y médico.
+* El sistema verifica si esta disponible dicha fecha y médico.
+* En caso de estar disponible el sistema muestra un mensaje de "Turno Asignado" y le genera un código de seguimiento sobre el turno, en caso de no estar disponible el sistema pedirá que seleccione un horario o fecha diferente.
 
  # Precondiciones:
- Ninguna.
+ El usuario debe estar registrado.
 
 # Postcondiciones:
-El usuario queda registrado en el sistema.
+Se genera y asigna un turno.
 
-![image](https://github.com/user-attachments/assets/40f727b6-61ec-4714-a646-eaa56349fbbb)
+
