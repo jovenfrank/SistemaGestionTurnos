@@ -1,4 +1,4 @@
-# Herramientas Agile
+# Herramientas agile
 
 ## Tarjetas CRC
 
