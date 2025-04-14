@@ -140,4 +140,8 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
   - El evento queda registrado en el historial del sistema. 
 
   # Boceto Inicial del Diseño de Clases
+  ![Untitled-2025-04-14-1414](https://github.com/user-attachments/assets/506c67c8-4c9c-4f0b-a393-e176b7b7f2d4)
   
+  [Enlace para visualizar el boceto en linea](https://drive.google.com/file/d/1ZcqSf7J5FQL3zummXjd3QpSjbuT-l5sZ/view?usp=drive_link)
+
+
