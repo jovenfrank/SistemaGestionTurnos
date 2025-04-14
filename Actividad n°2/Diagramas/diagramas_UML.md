@@ -1,3 +1,3 @@
 > ## Diagramas U
 
-> - [Diagrama UML](/Actividad-n°2/Diagramas/diagrama_UML.md)
+> - [Diagrama UML](diagrama_UML.md)
