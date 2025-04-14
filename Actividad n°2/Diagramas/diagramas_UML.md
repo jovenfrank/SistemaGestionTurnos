@@ -1,5 +1,3 @@
 > ## Diagramas U
 
-> - [Diagrama UML]
- > - [Diagramas de Casos de Uso]
->  -  [Escenarios de Casos de Uso]
+> - [Diagrama UML](/Actividad-n°2/diagramas/diagrama_UML.md)
