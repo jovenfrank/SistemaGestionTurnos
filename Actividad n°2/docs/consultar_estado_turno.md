@@ -19,3 +19,5 @@ El usuario puede consultar el estado de su turno en tiempo real
 
 # Postcondiciones:
 Se muestra la información del turno.
+
+![image](https://github.com/user-attachments/assets/380237c1-115b-4024-82fd-025191b0459a)
