@@ -1,4 +1,4 @@
-> ## Diagramas U
+> ## Diagramas UML
 
 > - [Diagrama UML](diagrama_UML.md)
 > - [Diagramas de Casos de Uso]()
