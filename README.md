@@ -1,1 +1,3 @@
-Este repositorio contiene el diseño conceptual inicial de un sistema de gestión de turnos médicos para un pequeño centro de salud, aplicando los principios de la Programación Orientada a Objetos (POO). Este es el segundo entregable del trabajo práctico o actividad de la materia Diseño Orientado a Objetos.
+# SistemaGestionTurnos
+
+Este proyecto es un sistema diseñado para gestionar y administrar turnos de manera eficiente en diferentes entornos que se desee, utilizando principios de la Programación Orientada en Objetos (POO). Este es el segundo entregable de la actividad de la materia Programacion Orientada a Objetos
