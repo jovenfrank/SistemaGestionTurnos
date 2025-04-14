@@ -20,4 +20,6 @@ Este caso permite al usuario poder solicitar un turno medico en el momento que d
 # Postcondiciones:
 Se genera y asigna un turno.
 
+![image](https://github.com/user-attachments/assets/6ef9efd7-0d64-40b6-82bd-cd7fcb338d57)
+
 
