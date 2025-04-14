@@ -23,3 +23,6 @@ El usuario puede cancelar un turno cuando necesite
 
 # Postcondiciones:
 El turno se elimina del sistema.
+
+![image](https://github.com/user-attachments/assets/6b2708a0-7e0a-45ec-841e-a5e48cf0222d)
+
