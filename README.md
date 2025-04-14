@@ -13,7 +13,7 @@ Este proyecto es un sistema diseñado para gestionar y administrar turnos de man
 
 # Diagramas y Diseños
 
-* [Diagramas UML](diagramasUML.md)
+* [Diagramas UML](diagramasuml.md)
 * [Diagramas de Casos de Uso](/Actividad-n°2/diagramas/diagramas_de_casos_de_uso.md)
 * [Escenarios de Casos de Uso](escenarios_de_caso_de_uso.md)
 
