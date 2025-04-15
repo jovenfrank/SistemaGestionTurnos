@@ -81,5 +81,23 @@
 ![Captura de pantalla 2025-04-13 195039](https://github.com/user-attachments/assets/b4055b1b-6a59-48f9-8645-9db39b05e8f2)
 
 
+   **Superclase:** Sistema 
+
+   **Subclase:** -
+
+
+- Pensamiento del objeto: El usuario debe conocer los datos del turno que va a cancelar y notificar la cancelacion 
+  del turno.
+
+- Responsabilidades: El usuario debe poder cancelar el turno y notificar la cancelacion.
+
+- Colaboradores: Solicitud de Turno, Notificacion.
+
+- Propiedad: Usuario, dia fecha y hora del turno, especialidad, medico. 
+
+
+![Captura de pantalla 2025-04-13 195554](https://github.com/user-attachments/assets/60fbc1a3-dea8-475e-b8e4-e593647c5ca9)
+
+
 
 
