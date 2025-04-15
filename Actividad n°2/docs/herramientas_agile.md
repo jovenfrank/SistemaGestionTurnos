@@ -1,3 +1,3 @@
 > ## Herramientas Agile
 
-> - [Tarjetas CRC](/Actividad-n°2/docs/tarjetas_CRC.md)
+> - [Tarjetas CRC](tarjetas_CRC.md)
