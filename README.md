@@ -15,7 +15,7 @@ Este proyecto es un sistema diseñado para gestionar y administrar turnos de man
 * [Diagramas UML]([/diagramas/diagramasUML.md](https://github.com/jovenfrank/SistemaGestionTurnos/blob/main/Actividad%20n%C2%B02/diagramas/diagramasUML.md))
 * [Diagramas de Casos de Uso](diagramas_de_caso_de_uso.md)
 * [Escenarios de Casos de Uso](escenarios_de_casos_de_uso.md)
-* [Herramientas Agile] (herramientas_agile.md)
+* [Herramientas Agile](herramientas_agile.md)
 
 
 
