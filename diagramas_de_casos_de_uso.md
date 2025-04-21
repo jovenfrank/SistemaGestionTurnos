@@ -15,3 +15,12 @@ Este caso de uso permite que el usuario previamente registrado en el sistema pue
 
 [Visualizar caso 2](https://drive.google.com/file/d/1JtgtVW_67aBXFkHIDMjo3Y_YvQBFjgHa/view?usp=drive_link)
 
+### Diagrama de Casos de Usos 3: Solicitar un turno medico:
+Este caso le permite al paciente poder ingresar al sistema y poder sacar un turno medico dependiendo la especialidad del profesional, el medico y los horarios disponibles
+
+![image](https://github.com/user-attachments/assets/1a492acd-f7e4-48ee-beef-7ad722349631)
+
+
+[Visualizar caso 3](https://drive.google.com/file/d/1hTaqL7vqI7Px0yeIeUiZui00on558iZO/view?usp=drive_link)
+
+
