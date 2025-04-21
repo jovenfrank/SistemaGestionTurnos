@@ -11,19 +11,19 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ##  Los Cuatro Fundamentos de POO
 
-### 1️⃣ **Encapsulamiento**
+###  **Encapsulamiento**
    - Agrupar datos y métodos en una sola unidad (clase).
    - Ejemplo: Un automóvil (clase) tiene atributos como "marca" y "color", y métodos como "acelerar" y "frenar".  
    
-### 2️⃣ **Herencia**
+###  **Herencia**
    - Permite que una clase (hija) herede atributos y métodos de otra clase (padre).
    - Ejemplo: Un "AutoDeportivo" hereda características de "Automóvil".
 
-### 3️⃣ **Polimorfismo**
+###  **Polimorfismo**
    - Un mismo método puede comportarse de manera diferente en distintas clases.
    - Ejemplo: Un "Empleado" puede tener un método "calcularSalario()", pero su implementación varía entre un "Gerente" y un "Vendedor".
 
-### 4️⃣ **Abstracción**
+###  **Abstracción**
    - Permite crear clases genéricas sin preocuparse por los detalles internos.
    - Ejemplo: Un "DispositivoElectrónico" puede tener métodos como "encender()" y "apagar()", pero su implementación varía para un "Teléfono" y una "Computadora".
 
@@ -41,7 +41,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ## 📌 Casos de Uso
 
-## ✅ Caso de Uso 1: Registrar Paciente
+##  Caso de Uso 1: Registrar Paciente
 
 - **Actor(es)**: Sistema / Paciente  
 - **Descripción breve**: Permite registrar a un nuevo paciente en el sistema con toda su información personal.  
@@ -63,7 +63,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## ✅ Caso de Uso 2: Iniciar Sesión al Sistema
+##  Caso de Uso 2: Iniciar Sesión al Sistema
 
 - **Actor(es)**: Administrador / Médico / Paciente  
 - **Descripción breve**: El usuario accede al sistema usando sus datos personales
@@ -78,7 +78,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## ✅ Caso de Uso 3: Solicitar un Turno Nuevo
+##  Caso de Uso 3: Solicitar un Turno Nuevo
 
 - **Actor(es)**: Paciente / Sistema
 - **Descripción breve**: El paciente solicita un nuevo turno segun la especialidad que desee, medicos disponibles, fecha y horario.
@@ -97,7 +97,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## ✅ Caso de Uso 4: Cancelar un Turno
+##  Caso de Uso 4: Cancelar un Turno
 
 - **Actor(es)**: Paciente / Médico / Sistema 
 - **Descripción breve**: Permite cancelar un turno previamente asignado.  
@@ -112,7 +112,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## ✅ Caso de Uso 5: Ver Estado del Turno
+##  Caso de Uso 5: Ver Estado del Turno
 
 - **Actor(es)**: Paciente / Sistema 
 - **Descripción breve**: Permite visualizar el estado de los turnos del paciente.  
