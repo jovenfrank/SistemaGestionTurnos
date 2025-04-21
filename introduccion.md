@@ -41,103 +41,91 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ## 📌 Casos de Uso
 
-###  **Caso de Uso 1: Registro de Usuario**
-- **Actor:** Usuario
-   
-- **Descripción:** Permite a los usuarios registrarse en el sistema.
-  
-- **Flujo Principal:**  
-  1. El usuario ingresa al sistema para registrarse.  
-  2. El sistema muestra un formulario en el cual pide datos del paciente (Nombre y apellido completo, DNI, numero telefonico, Correo electronico.  
-  3. El usuario ingresa todos los datos necesarios.
-  4. El sistema valida los datos ingresados (Para validar el correo y numero telefonico envia un codigo).
-  5. Los datos son registrados y guardados en el sistema.
-  6. El sistema muestra un mensaje de "Registrado con exito"  
-- **Precondiciones:** Ninguna.
-    
-- **Postcondiciones:** El usuario queda registrado en el sistema.  
+## ✅ Caso de Uso 1: Registrar Paciente
 
-###  **Caso de Uso 2: Solicitar Turno**
+- **Actor(es)**: Sistema / Paciente  
+- **Descripción breve**: Permite registrar a un nuevo paciente en el sistema con toda su información personal.  
+- **Flujo principal de eventos**:
+  1. El paciente accede al módulo de “Registro de Paciente”.
+  2. El sistema solicita los siguientes datos:
+     * Nombre completo
+     * DNI / Documento
+     * Fecha de nacimiento
+     * Teléfono
+     * Correo electrónico
+     * Dirección
+  3. El paciente completa y envía el formulario.
+  4. El sistema valida los datos (que no exista otro paciente con el mismo DNI o email).
+  5. Si todo es correcto, se guarda el nuevo registro.
+  6. Se muestra un mensaje de confirmación.
+- **Precondiciones**: El paciente no debe estar registrado previamente.  
+- **Postcondiciones**: Paciente registrado correctamente en la base de datos.
 
-- **Actor:** Usuario
-  
-- **Descripción:** Permite a los usuarios solicitar un turno.
-  
-- **Flujo Principal:**  
-  1. El usuario ingresa con su cuenta previamente creada.
-  2. El sistema verifica si los datos son correctos  
-  3. El usuario selecciona el apartado de solicitar un turno.  
-  4. El sistema muestra los turnos disponibles acorde a una fecha, horario, especialidad y un medico.
-  5. El ususario selecciona la especialidad, fecha, horario y medico.
-  6. El sistema verifica si esta disponible dicha fecha y medico.
-  7. En caso de estar disponible el sistema muestra un mensaje de "Turno Asignado" y le genera un codigo de seguimiento sobre el turno, en caso de no estar disponible el sistema pedira que seleccione un horario o fecha diferente.
+---
 
-- **Precondiciones:** El usuario debe estar registrado.
-    
-- **Postcondiciones:** Se genera y asigna un turno.  
+## ✅ Caso de Uso 2: Iniciar Sesión al Sistema
 
-###  **Caso de Uso 3: Consultar Estado del Turno**
+- **Actor(es)**: Administrador / Médico / Paciente  
+- **Descripción breve**: El usuario accede al sistema usando sus datos personales
+- **Flujo principal de eventos**:
+  1. El paciente accede a la pantalla de inicio de sesión.
+  2. Ingresa su nombre de usuario o correo electrónico y contraseña.
+  3. El sistema valida las credenciales.
+  4. Si son válidas, se redirige al panel correspondiente según el rol.
+  5. Si no son válidas, se muestra un mensaje de error.
+- **Precondiciones**: El usuario debe estar previamente registrado.
+- **Postcondiciones**: Acceso concedido al sistema, según el tipo de usuario.
 
-- **Actor:** Usuario
-  
-- **Descripción:** Permite a los usuarios ver el estado de su turno en tiempo real.
-   
-- **Flujo Principal:**  
-  1. El usuario ingresa con su cuenta al sistema.  
-  2. El sistema verifica si los datos son correctos.
-  3. El usuario selecciona el apartado de Turnos - Estado de turno.
-  4. El sistema pide el codigo de seguimiento del turno.
-  5. El usuario ingresa el codigo de seguimiento previamente dado al solicitar el turno.
-  6. El sistema verifica el codigo.
-  7. El sitema muestra el estado del turno del usuario.  
-- **Precondiciones:** El usuario debe tener un turno generado.
-   
-- **Postcondiciones:** Se muestra la información del turno.  
+---
 
-###  **Caso de Uso 4: Cancelar Turno**
+## ✅ Caso de Uso 3: Solicitar un Turno Nuevo
 
-- **Actor:** Usuario
-  
-- **Descripción:** Permite a los usuarios cancelar un turno asignado.
-   
-- **Flujo Principal:**  
-  1. El usuario ingresa al sistema con sus datos.
-  2. El sistema verifica la informacion.  
-  3. El usuario ingresa al apartado de Turnos - Cancelar turno.
-  4. El sistema pide el codigo del turno.
-  5. El usuario ingresa el codigo de seguimiento.
-  6. El sistema verifica el codigo y da acceso al apartado de cancelar turno.
-  7. El usuario da click en el apartado de Cancelar turno
-  8. El sistema imprime un mensaje de "Seguro que quieres cancelar el turno" y da dos opciones "Si" o "No"
-  9. El usuario seleccion en el apartado de "Si"
-  10. El sistema muestra un mensaje de "Turno cancelado"
-  11. El sistema elimina el turno.  
-- **Precondiciones:** El usuario debe tener un turno activo.
-   
-- **Postcondiciones:** El turno se elimina del sistema.  
+- **Actor(es)**: Paciente / Sistema
+- **Descripción breve**: El paciente solicita un nuevo turno segun la especialidad que desee, medicos disponibles, fecha y horario.
+- **Flujo principal de eventos**:
+  1. El paciente accede a la opción “Solicitar Turno”.
+  2. Selecciona la especialidad médica deseada.
+  3. El sistema muestra los médicos disponibles con esa especialidad.
+  4. El paciente selecciona un médico.
+  5. El sistema muestra el calendario con los horarios disponibles.
+  6. El paciente elige una fecha y hora.
+  7. Ingresa el motivo del turno y, opcionalmente, observaciones.
+  8. El sistema registra el turno con estado "pendiente" o "confirmado".
+  9. Se muestra una confirmación y se envía una notificación al paciente.
+- **Precondiciones**: El paciente debe estar registrado.  
+- **Postcondiciones**: Turno agendado en la agenda médica correspondiente.
 
-###  **Caso de Uso 5: Notificación de turno próximo
+---
 
-- **Actor:**  Usuario, Sistema de Gestión de Turnos
-  
-- **Descripción:**  
-  El sistema envía una notificación automática al usuario cuando su turno se aproxima, para recordarle la fecha y hora asignada.
-  
-- **Flujo principal:**
-  1. El usuario solicita un turno a través del sistema.
-  2. El sistema registra la información del turno con fecha y hora.
-  3. Cuando el turno se encuentra a menos de 24 horas, el sistema detecta automáticamente la proximidad del evento.
-  4. El sistema genera una notificación personalizada.
-  5. El sistema envía la notificación al usuario por correo electrónico o mensaje dentro de la plataforma.
-  6. El usuario recibe la notificación y se prepara para asistir a su turno.
-     
-- **Precondiciones:**
-  - El usuario debe haber agendado un turno en el sistema.
-  - El usuario debe tener una dirección de correo válida registrada.
-    
-- **Postcondiciones:**
-  - El usuario recibe una notificación con la información de su turno.
-  - El evento queda registrado en el historial del sistema. 
+## ✅ Caso de Uso 4: Cancelar un Turno
+
+- **Actor(es)**: Paciente / Médico / Sistema 
+- **Descripción breve**: Permite cancelar un turno previamente asignado.  
+- **Flujo principal de eventos**:
+  1. El paciente accede a la sección de “Mis Turnos”.
+  2. Selecciona el turno que desea cancelar.
+  3. Confirma la acción.
+  4. El sistema cambia el estado del turno a "cancelado".
+  5. Se envía una notificación a los involucrados (paciente y médico).
+- **Precondiciones**: Debe haber un turno previamente asignado al paciente  
+- **Postcondiciones**: El turno queda cancelado y reflejado en el historial.
+
+---
+
+## ✅ Caso de Uso 5: Ver Estado del Turno
+
+- **Actor(es)**: Paciente / Sistema 
+- **Descripción breve**: Permite visualizar el estado de los turnos del paciente.  
+- **Flujo principal de eventos**:
+  1. El paciente accede a la opción “Mis Turnos”.
+  2. El sistema muestra una lista de turnos con su información:
+     - Fecha y hora
+     - Médico asignado
+     - Estado del turno (pendiente, confirmado, cancelado)
+     - Motivo y observaciones
+  3. El usuario puede filtrar por estado o fecha.
+- **Precondiciones**: El paciente debe estar registrado y tener turnos asociados.  
+- **Postcondiciones**: El usuario obtiene una vista clara del estado de sus turnos.
 
   # Boceto Inicial del Diseño de Clases
   ![Untitled-2025-04-14-1414](https://github.com/user-attachments/assets/506c67c8-4c9c-4f0b-a393-e176b7b7f2d4)
