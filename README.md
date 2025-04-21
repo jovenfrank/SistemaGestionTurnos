@@ -12,7 +12,7 @@ Este proyecto es un sistema diseñado para gestionar y administrar turnos de man
 
 # Diagramas y diseños
 * [Anexos](anexos.md) 
-* [Diagramas UML](/diagrama/diagramasUML.md)
+* [Diagramas UML](diagramasUML.md)
 * [Herramientas Agile](herramientas_agile.md)
 
 
