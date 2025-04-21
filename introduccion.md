@@ -29,7 +29,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## 📋 Requisitos Iniciales del Sistema
+##  Requisitos Iniciales del Sistema
 
 1. Permitir a los usuarios registrarse y solicitar turnos.
 2. Generar y administrar turnos de manera automática.
@@ -39,7 +39,7 @@ La **Programación Orientada a Objetos (POO)** es un paradigma de programación 
 
 ---
 
-## 📌 Casos de Uso
+##  Casos de Uso
 
 ##  Caso de Uso 1: Registrar Paciente
 
