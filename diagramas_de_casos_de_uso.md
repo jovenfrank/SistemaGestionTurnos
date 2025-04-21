@@ -7,5 +7,11 @@ Este caso de uso le permite al paciente o nuevo usuario poder registrarse en el 
 
 [Visualizar caso 1](https://drive.google.com/file/d/1P6Y_xe2wqggBg7YYtTcJOQ4Lw850lfh4/view?usp=drive_link)
 
-### Diagrama de Casos de Usos 2: Iniciar sesion al sistema
+### Diagrama de Casos de Usos 2: Iniciar sesion al sistema:
+Este caso de uso permite que el usuario previamente registrado en el sistema pueda iniciar sesion con su cuenta, utilizando su nombre de usuario o correo electronico y contraseña
+
+![image](https://github.com/user-attachments/assets/a8a44757-846e-45fa-9f44-5dc7512adfd8)
+
+
+[Visualizar caso 2](https://drive.google.com/file/d/1JtgtVW_67aBXFkHIDMjo3Y_YvQBFjgHa/view?usp=drive_link)
 
