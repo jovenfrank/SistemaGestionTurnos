@@ -23,4 +23,6 @@ Este caso le permite al paciente poder ingresar al sistema y poder sacar un turn
 
 [Visualizar caso 3](https://drive.google.com/file/d/1hTaqL7vqI7Px0yeIeUiZui00on558iZO/view?usp=drive_link)
 
+### Diagrama de Casos de Usos 4: 
+
 
