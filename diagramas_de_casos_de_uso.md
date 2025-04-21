@@ -23,6 +23,13 @@ Este caso le permite al paciente poder ingresar al sistema y poder sacar un turn
 
 [Visualizar caso 3](https://drive.google.com/file/d/1hTaqL7vqI7Px0yeIeUiZui00on558iZO/view?usp=drive_link)
 
-### Diagrama de Casos de Usos 4: 
+### Diagrama de Casos de Usos 4: Cancelar un Turno
+Este caso le permite al paciente/usuario o personal administrativ poder cancelar un turno en cualquier momento, teniendo en cuenta que al cancelar ese turno quedara guardado en el historial
+
+![image](https://github.com/user-attachments/assets/faee78a2-64b4-4cf8-b26a-6df8e916f2d6)
+
+
+[Visualizar caso 4](https://drive.google.com/file/d/1Wbmes2dhrlmFjTOXasTsbs-DhHj96yl3/view?usp=drive_link)
+
 
 
