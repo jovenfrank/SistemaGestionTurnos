@@ -41,13 +41,13 @@ Permite que los usuarios accedan a su cuenta dentro del sistema según sus crede
 
 ## Flujo de eventos
 1. **Pantalla de login:**
-- El actor accede a la interfaz de inicio de sesión.
+- El usuario accede a la interfaz de inicio de sesión.
      
 2.**Ingreso de credenciales:**
 - El sistema solicita usuario y contraseña.
      
 3.**Envío de datos:**
-- El actor ingresa los datos y confirma.
+- El usuario ingresa los datos y confirma.
      
 4.**Validación:**
 - El sistema verifica si las credenciales son correctas.
@@ -104,13 +104,13 @@ Permite que los usuarios accedan a su cuenta dentro del sistema según sus crede
 
   ## Flujo de eventos
 1. **Acceso a turnos:**
-- El actor entra a la sección “Mis turnos”.
+- El paciente entra a la sección “Mis turnos”.
 2. **Selección del turno:**
 - Escoge el turno que desea cancelar.
 3. **Confirmación de acción:**
 - El sistema solicita que confirme la cancelación.
 4. **Ejecución:**
-- El actor confirma y el sistema procede con la cancelación.
+- El paciente confirma y el sistema procede con la cancelación.
 5. **Cambio de estado:**
 - El turno pasa a estado “Cancelado”.
 6. **Aviso a involucrados:**
@@ -122,6 +122,31 @@ Permite que los usuarios accedan a su cuenta dentro del sistema según sus crede
 - **Postcondiciones:** El turno queda cancelado y libre para otros pacientes.
 
 * [Enlace del Escenario](https://drive.google.com/file/d/1MU8uFkYKamb6EtO7NMyuC-5w-WqrogrK/view?usp=sharing)
+
+  ## Caso de uso 5 - Ver el estado del turno
+
+  ## Descripcion general
+  El paciente puede consultar la información actualizada de sus turnos: próximos, pasados y su estado correspondiente.
+
+  ## Flujo de eventos
+1. **Ingreso al sistema:**
+- El paciente accede con su cuenta.
+2. **Acceso a historial de turnos:**
+- En el panel elige “Mis turnos”.
+3. **Visualización de turnos:**
+- El sistema muestra la lista de turnos.
+4. **Filtrado/búsqueda:**
+- El paciente puede buscar por fecha, médico o estado.
+5. **Visualización de detalles:**
+- El sistema despliega la información completa de cada turno.
+
+     ## Condiciones
+     
+- **Precondiciones:** El paciente debe tener turnos registrados.  
+- **Postcondiciones:** El paciente conoce el estado actual de sus turnos.
+
+* [Enlace del Escenario](https://drive.google.com/file/d/1LcCDwpPMrelWuczF7ngGq3QSE3fiDj0B/view?usp=sharing)
+
 
 
 
