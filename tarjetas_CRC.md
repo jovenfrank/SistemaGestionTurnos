@@ -107,66 +107,68 @@
    
 - **Subclases:** –
    
-- **Pensamiento del objeto:** “Controlo el acceso, organización y gestión de todos los elementos del sistema de turnos.”
+- **Pensamiento del objeto:** “Soy el núcleo del sistema de gestión de turnos y almaceno todos los datos. Coordino las acciones principales, gestiono la interacción entre usuarios, médicos, pacientes y turnos. Me encargo de mantener la integridad de los datos y brindar acceso a las funcionalidades clave del sistema. Debo registrar a usuarios nuevos al igual que profesionales. Valido las credenciales de cada usuario que ingresa al sistema. Necesito enviar notificaciones en tiempo y forma”
     
-- **Responsabilidades:** 
-  - Validar usuarios y credenciales  
-  - Gestionar turnos  
-  - Notificar cambios o recordatorios  
-  - Manejar reportes y estadísticas
+- **Responsabilidades:**
+
+Registrar nuevos usuarios y médicos en el sistema 
+Validar credenciales e iniciar sesión  
+Gestionar solicitudes de turnos  
+Verificar disponibilidad de turnos para médicos  
+Coordinar el envío de notificaciones a los pacientes  
+Guardar cambios en la base de datos o almacenamiento persistente  
+Controlar accesos y roles (administrador, paciente, médico)
      
-- **Colaboradores:** Paciente, Médico, Turno, Notificación
+- **Colaboradores:** Paciente, Médico, Turno, Notificación, administrador
+
+
+- **Propiedades:**
+- `listaPacientes: List<Paciente>`  
+- `listaMedicos: List<Medico>`  
+- `listaTurnos: List<Turno>`  
+- `usuariosRegistrados: List<Usuario>`  
+- `notificador: Notificador`  
+- `sistemaActivo: boolean`  
+- `registroEventos: List<String>` (para log de actividades)
+
+![image](https://github.com/user-attachments/assets/9fb32266-7db6-4abd-bc0f-aff02e3f9cf3)
+
+[Ver tarjeta CRC](https://drive.google.com/file/d/1AFv_JSxsycmW9GPjU6Rtr_vlg07U4xjI/view?usp=sharing)
+
     
-- **Propiedades:**  
-  - `usuarios: List<Usuario>`  
-  - `turnos: List<Turno>`
-
-
-    [Ver tarjeta CRC]()
-
-    ## Tarjeta CRC: EstadoTurno
-    - **Clase:** EstadoTurno
+## Tarjeta CRC: EstadoTurno
+- **Clase:** EstadoTurno
         
 - **Superclase:** –
     
 - **Subclases:** –
   
-- **Pensamiento del objeto:** “Indico en qué etapa del proceso se encuentra un turno.”
+- **Pensamiento del objeto:** “Represento el estado actual de un turno dentro del sistema. Debo dar descripciones precisas y correctas de los turnos. Indico si un turno está confirmado, cancelado, pendiente o finalizado. Soy esencial para el seguimiento, gestión y validación del flujo de turnos, Conozco las reglas de comportamiento, si un turno esta asignado no se mostrara como disponible”
    
 - **Responsabilidades:**  
-  - Representar el estado actual del turno  
-  - Validar las transiciones de estado
+- Almacenar y exponer el estado actual de un turno  
+- Validar transiciones entre estados válidos (por ejemplo, de 'pendiente' a 'confirmado')  
+- Proveer descripciones comprensibles del estado para mostrar al usuario  
+- Notificar al sistema sobre cambios en el estado del turno  
+- Asociar reglas de comportamiento según el estado (por ejemplo, si un turno está asignado, no debe mostrarse como disponible)
       
-- **Colaboradores:** Turno, Sistema
+- **Colaboradores:** Turno, Sistema, Notificador
     
 - **Propiedades:**  
-  - `estado: Enum (PENDIENTE, CONFIRMADO, CANCELADO, ATENDIDO)`  
-  - `fechaCambio: LocalDateTime`
+- `estadoActual: String` (valores posibles: `"pendiente"`, `"confirmado"`, `"cancelado"`, `"finalizado"`)  
+- `fechaCambio: LocalDateTime` (marca temporal del último cambio de estado)  
+- `descripcion: String` (explicación opcional del motivo del cambio de estado)  
+- `turnoAsociado: Turno` (referencia al turno al que pertenece este estado)
 
-    ## Tarjeta CRC: Notificacion
-    - **Clase:** Notificación
-       
-- **Superclase:** –
-  
-- **Subclases:** EmailNotificación, SMSNotificación
-   
-- **Pensamiento del objeto:** “Me encargo de informar al usuario sobre eventos importantes.”
-    
-- **Responsabilidades:**  
-  - Enviar mensajes al paciente o médico  
-  - Registrar historial de envíos
-      
-- **Colaboradores:** Sistema, Paciente / Médico
-    
-- **Propiedades:**  
-  - `tipo: Enum (EMAIL, SMS)`  
-  - `contenido: String`  
-  - `destinatario: Usuario`  
-  - `fechaEnvio: LocalDateTime`
+**Posibles extensiones:**
 
+- Agregar historial de cambios de estado  
+- Asociar códigos de notificación para cambios automáticos  
+- Incluir un campo `usuarioQueCambio` para rastrear quién cambió el estado
 
+![image](https://github.com/user-attachments/assets/3355928e-ab02-4cf3-9c10-800c509b36a4)
 
-     [Ver tarjeta CRC]()
+[Ver tarjeta CRC](https://drive.google.com/file/d/18h8KJ25oqO1vTykdLxQavAwK_lrXaP2i/view?usp=sharing)
 
 
 
