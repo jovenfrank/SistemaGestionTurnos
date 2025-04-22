@@ -7,96 +7,167 @@
 
 
 
-
-  ### Tarjeta CRC: Consultar Turno 
-
-  **Nombre de la Clase:**  Consultar estado de Turno 
-
-  **Superclase:** Sistema 
-
-  **Subclase:** -
-
-- Pensamiento del objeto: Se presenta el usuario en recepcion con sus respectivos datos (DNI)  para consultar un 
-  turno con el medico y la especialidad del medico que requiera. 
-  teniendo en cuenta la fecha, el dia y la hora a su conveniencia . Conociendo la agenda medica .
-
-- Responsabilidades: Poder consultar por un turno medico, Conocer el id Usuario, sus datos generales, datos del turno 
-  consultado, que medico solicitar.
-
-- Colaboradores: Solicitar turno.
-
-- Propiedad:  Nro de Usuario , DNI, correo, telefono ,  dia, hora y fecha del turno, medico, especialidad del medico .
-
-
- ![Captura de pantalla 2025-04-13 190606](https://github.com/user-attachments/assets/34973169-cdcc-43e7-a33a-b824f9fbde9a)
-
-
-
-   ### Tarjeta CRC: Solicitar Turnos  
-
-  **Nombre de la Clase:**  Solicitar Turnos 
-
-   **Superclase:** Sistema 
-
-   **Subclase:** -
+  ## Tarjeta CRC: Pacinete
+- **Clase:** Paciente
+    
+- **Superclase:** Persona
+   
+- **Subclases:** –
+  
+- **Pensamiento del objeto:** “Se que especialista necesito al igual que mis datos personales. Necesito ver con quien y cuando tengo turno medico, avisare cuando no pueda asistir y cancelare mi turno, mis datos pueden cambiar.”
+  
+- **Responsabilidades:**  
+  - Registrarse en el sistema  
+  - Solicitar y cancelar turnos  
+  - Consultar estado de turnos  
+  - Mantener actualizada su información personal
+      
+- **Colaboradores:** Sistema, Turno, Médico
+    
+- **Propiedades:**  
+  - `nombreCompleto: String`  
+  - `dni: String`  
+  - `fechaNacimiento: LocalDate`  
+  - `telefono: String`  
+  - `correo: String`  
+  - `historialTurnos: List<Turno>`
 
 
- - Pensamiento del objeto: El usuario debe registrar su turno con sus datos correspondientes, solicitando fecha, dia 
-  , hora y la especialidad del medico a su 
-   conveniencia. 
+![image](https://github.com/user-attachments/assets/e92966b3-96a4-4d9a-8905-a4045a3a4e6e)
 
-- Responsabilidades: Poder solicitar un turno medico, conocer la agenda del medico para saber la disponibilidad de 
-  turnos.  
+[Ver tarjeta CRC](https://drive.google.com/file/d/1VNF_GUc7zUaRyt_1qLDnyki7kYATPH2c/view?usp=sharing)
 
-- Colaboradores: Notificacion del turno , consulta de turnos.  
+## Tarjeta CRC: Medico
 
-- Propiedad:  Usuario, medico, agenda.
+- **Clase:** Médico
+  
+- **Superclase:** Persona
+  
+- **Subclases:** –  
+- **Pensamiento del objeto:** “Debo atender pacientes según mi especialidad y disponibilidad, quiero recordar turnos. Necesito ver mi agenda de turnos, quiero registrar diagnosticos y observaciones de mis pacientes. Modificar o cancelar turnos, acceder la historial clinico de mis pacientes”
+  
+- **Responsabilidades:**  
+  - Definir y actualizar su horario de atención  
+  - Ver sus turnos programados  
+  - Ingresar observaciones médicas
+  - Modificar o cancelar turnos
+  - Acceder al historial de los pacientes
+  
+- **Colaboradores:** Turno, Sistema, Paciente, HistoriaClinica, agenda
+
+- **Propiedades:**  
+  - `nombreCompleto: String`  
+  - `matricula: String`  
+  - `especialidad: String`  
+  - `horarioAtencion: List<DiaHora>`  
+  - `telefono: String`  
+  - `correo: String`
+
+  ![image](https://github.com/user-attachments/assets/3bff8d2f-77c6-445a-9d94-bdae90130554)
+
+  [Ver tarjeta CRC](https://drive.google.com/file/d/1hF25AZ768MKmJ5c6Nj_kjFAo1Nzl_J5a/view?usp=sharing)
+
+  ## Tarjeta CRC: Turno
+
+  - **Clase:** Turno
+    
+- **Superclase:** –
+   
+- **Subclases:** –
+  
+- **Pensamiento del objeto:** “Soy un compromiso entre paciente y médico, con fecha y estado definido.”
+   
+- **Responsabilidades:**  
+  - Registrar la solicitud de atención
+  - Conocer su fecha y hora  
+  - Asociarse a paciente y médico  
+  - Almacenar motivo y observaciones  
+  - Cambiar su estado
+    
+- **Colaboradores:** Paciente, Médico, EstadoTurno
+  
+- **Propiedades:**  
+  - `fecha: LocalDate`  
+  - `hora: LocalTime`  
+  - `estado: EstadoTurno`  
+  - `motivo: String`  
+  - `observaciones: String`  
+  - `paciente: Paciente`  
+  - `medico: Médico`
+
+![image](https://github.com/user-attachments/assets/cc1a8dee-7e8a-44b2-a96e-775c9ef76300)
+
+
+ [Ver tarjeta CRC](https://drive.google.com/file/d/1XXxw1nyf7YSNcVxRgvWFiXlz8_qpZsCo/view?usp=sharing)
+
+ ## Tarjeta CRC: Sistema
+ - **Clase:** Sistema
+    
+- **Superclase:** –
+   
+- **Subclases:** –
+   
+- **Pensamiento del objeto:** “Controlo el acceso, organización y gestión de todos los elementos del sistema de turnos.”
+    
+- **Responsabilidades:** 
+  - Validar usuarios y credenciales  
+  - Gestionar turnos  
+  - Notificar cambios o recordatorios  
+  - Manejar reportes y estadísticas
+     
+- **Colaboradores:** Paciente, Médico, Turno, Notificación
+    
+- **Propiedades:**  
+  - `usuarios: List<Usuario>`  
+  - `turnos: List<Turno>`
+
+
+    [Ver tarjeta CRC]()
+
+    ## Tarjeta CRC: EstadoTurno
+    - **Clase:** EstadoTurno
+        
+- **Superclase:** –
+    
+- **Subclases:** –
+  
+- **Pensamiento del objeto:** “Indico en qué etapa del proceso se encuentra un turno.”
+   
+- **Responsabilidades:**  
+  - Representar el estado actual del turno  
+  - Validar las transiciones de estado
+      
+- **Colaboradores:** Turno, Sistema
+    
+- **Propiedades:**  
+  - `estado: Enum (PENDIENTE, CONFIRMADO, CANCELADO, ATENDIDO)`  
+  - `fechaCambio: LocalDateTime`
+
+    ## Tarjeta CRC: Notificacion
+    - **Clase:** Notificación
+       
+- **Superclase:** –
+  
+- **Subclases:** EmailNotificación, SMSNotificación
+   
+- **Pensamiento del objeto:** “Me encargo de informar al usuario sobre eventos importantes.”
+    
+- **Responsabilidades:**  
+  - Enviar mensajes al paciente o médico  
+  - Registrar historial de envíos
+      
+- **Colaboradores:** Sistema, Paciente / Médico
+    
+- **Propiedades:**  
+  - `tipo: Enum (EMAIL, SMS)`  
+  - `contenido: String`  
+  - `destinatario: Usuario`  
+  - `fechaEnvio: LocalDateTime`
 
 
 
-![Captura de pantalla 2025-04-13 191851](https://github.com/user-attachments/assets/788edab3-495d-4297-8725-b471640b3911)
+     [Ver tarjeta CRC]()
 
-
-
-
-### Tarjeta CRC: Notificacion Turnos  
-
-   **Nombre de la Clase:**  Notificacion de Turnos
-
-   **Superclase:** Sistema
- 
-   **Subclase:** -
-
-
- - Pensamiento del objeto: El usuario tiene que conocer los datos sobre el turno y el medico que fue designado al 
-   turno para enviar el correo y o mensaje al usuario.
-
-- Responsabilidades: Poder notificar a los pacientes.
-
-- Colaboradores: Solicitud de turno y cambio de turno.
-
-- Propiedad:  Dia, hora, fecha  y especialidad el medico. 
-
-
-![Captura de pantalla 2025-04-13 195039](https://github.com/user-attachments/assets/b4055b1b-6a59-48f9-8645-9db39b05e8f2)
-
-
-   **Superclase:** Sistema 
-
-   **Subclase:** -
-
-
-- Pensamiento del objeto: El usuario debe conocer los datos del turno que va a cancelar y notificar la cancelacion 
-  del turno.
-
-- Responsabilidades: El usuario debe poder cancelar el turno y notificar la cancelacion.
-
-- Colaboradores: Solicitud de Turno, Notificacion.
-
-- Propiedad: Usuario, dia fecha y hora del turno, especialidad, medico. 
-
-
-![Captura de pantalla 2025-04-13 195554](https://github.com/user-attachments/assets/60fbc1a3-dea8-475e-b8e4-e593647c5ca9)
 
 
 
