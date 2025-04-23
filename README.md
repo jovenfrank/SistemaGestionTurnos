@@ -1,4 +1,4 @@
-# SistemaGestionTurnos
+# SistemaGestionTurnos - Diseño del sistema
 | **Franquino Tolaba Salguero** |
 |------------------------------------------|
 | **Carrera:** Programación                 |
