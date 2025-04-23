@@ -1,5 +1,7 @@
 # Principio de Segregacion de Interfaces (ISP)
 
+En el sistema de gestión de turnos médicos, uno de los problemas identificados fue que ciertos módulos del sistema estaban obligados a depender de funcionalidades que no utilizaban. Por ejemplo, un componente que simplemente se encargaba de mostrar turnos también debía incluir funciones relacionadas con informes estadísticos, configuración del sistema o administración de usuarios. Este inconveniente se debe a una violación del principio de segregación de interfaces (ISP), que establece que ningún módulo debe estar obligado a depender de métodos que no necesita. Es decir, cada parte del sistema debe contar solamente con lo esencial para funcionar.
+
 El principio ISP (Interface Segregation Principle) propone dividir esas interfaces grandes en partes más pequeñas y específicas, de modo que cada componente del sistema dependa únicamente de lo que realmente requiere. Al aplicar este principio, se desarrollaron interfaces más simples y enfocadas, como una para la gestión de turnos, otra para notificaciones y una más para reportes.
 
 ## Motivacion
