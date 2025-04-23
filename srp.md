@@ -18,3 +18,8 @@ Imaginemos a un recepcionista de una clínica que debe hacerlo todo: atender a l
 
 ## Estructura de Clases
 
+![image](https://github.com/user-attachments/assets/c97c006d-67f1-4e55-8e03-7ac9e6a73d26)
+
+[Visualizar en Drive](https://drive.google.com/file/d/1UtPFAfFDoLQjzgrfAKsdRQYF6vKeUo-C/view?usp=sharing)
+
+
