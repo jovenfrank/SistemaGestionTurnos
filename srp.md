@@ -17,3 +17,4 @@ Para aplicar el Principio de Responsabilidad Única (SRP), se optó por dividir 
 Imaginemos a un recepcionista de una clínica que debe hacerlo todo: atender a los pacientes, organizar los turnos, enviar correos, hacer llamadas, registrar cuentas y limpiar el escritorio. Si se cambia la forma de enviar notificaciones, toda su rutina se ve afectada. Además, si comete un error, no es fácil saber en qué tarea sucedió. Ahora bien, si cada función está asignada a una persona diferente (una para atención, otra para agendamiento, otra para comunicaciones y otra para limpieza), el trabajo se vuelve más claro, eficiente y especializado. Cada persona tiene una tarea específica, y cualquier mejora se puede aplicar de forma más controlada.
 
 ## Estructura de Clases
+
