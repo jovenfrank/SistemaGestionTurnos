@@ -16,3 +16,8 @@ Imaginemos que una empresa de videojuegos tiene una aplicación que gestiona la 
 
 Sin embargo, si la aplicación está construida para depender de una interfaz común de "Sistema de Pago" (en lugar de depender directamente de un proveedor específico), solo necesitaría cambiar la implementación de esa interfaz para reflejar el nuevo proveedor de pagos. Esto permite una gran flexibilidad y agilidad ante cambios en el futuro, además de reducir los riesgos de errores, ya que solo se modifica una pequeña parte del sistema.
 
+![image](https://github.com/user-attachments/assets/26b9edad-cc65-4b14-9923-ff1c338fb256)
+
+[Visualizar en Drive](https://drive.google.com/file/d/197GojyAh9SFTRdAzJfM0djmWiuyi2w6c/view?usp=sharing)
+
+
